@@ -1,0 +1,294 @@
+css
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(to right, #294a3b, #99ff99); Lemon green to light green */
+    height: 100vh; /* Ensure the background covers the full height of the viewport */
+    background-size: cover;
+    background-image: url('C:/xampp/htdocs/catus renovations/png-transparent-cactus-cactus-desert-green-thumbnail-removebg-preview (1).png');
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.chat-container {
+    display: flex;
+    height: 80vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color:  white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    display: flex;
+   margin-left: 35%;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 4%;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+}
+
+h3{
+    color:  #0f773c;
+}
+h4{
+    color:  #0f773c;
+}
+
+.active-now-section, .recent-profile-section {
+    padding: 10px;
+}
+
+.contacts-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact p {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.online-status {
+    width: 10px;
+    height: 10px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.chat-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+    background-image: image();
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:  #0f773c;
+    color: #fff;
+}
+
+.chat-header-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    background-color: #EAEAEA;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.message.received {
+    justify-content: flex-start;
+}
+
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-content {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    max-width: 60%;
+}
+
+.message.received .message-content {
+    background-color: #F1F1F1;
+}
+
+.time {
+    font-size: 10px;
+    color: #888;
+    position: absolute;
+    bottom: -18px;
+    right: 10px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 20px;
+    
+    border-top: 1px solid #ddd;
+
+}
+
+.chat-input form {
+    display: flex;
+    flex: 1;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+
+}
+
+.chat-input .send-btn {
+    background-color: #1E8449;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.contacts-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px; /* Set height limit for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 20px; /* Space between lists */
+}
+
+.contact {
+    /* margin-bottom: 1%;
+    align-items: center;*/
+    padding: 10px;  
+    
+}
+
+.contact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact div {
+    flex: 1;
+}
+
+.online-status {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+/* Style for the entire scrollbar in the .contacts-list */
+.contacts-list::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+/* Style for the scrollbar track (part the thumb moves along) */
+.contacts-list::-webkit-scrollbar-track {
+}
+
+/* Style for the draggable part of the scrollbar */
+.contacts-list::-webkit-scrollbar-thumb {
+    background: black; /* Gray thumb color */
+    border-radius: 6px; /* Round the corners of the thumb */
+}
+
+/* Style for the scrollbar thumb on hover */
+.contacts-list::-webkit-scrollbar-thumb:hover {
+    background:  #0f773c; /* Darker gray when hovered */
+}
+
+
+
+
+
+.sidebar2 {
+    margin-top: 0%;
+    width: 300px;
+    height: 55vh; /* Full viewport height */
+    overflow-y: auto; /* Add vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    padding: 10px; 
+  }
+  /* Style the scrollbar track (the area the scrollbar moves along) */
+.sidebar2::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  /* Style the handle (the draggable part of the scrollbar) */
+  .sidebar2::-webkit-scrollbar-thumb {
+    background-color: #0f773c; /* Color of the scrollbar handle */
+    border-radius: 6px; /* Rounded corners for the scrollbar handle */
+  }
+  
+  /* Style the scrollbar handle on hover */
+  .sidebar2::-webkit-scrollbar-thumb:hover {
+    background-color:  #0f773c; /* Color of the scrollbar handle on hover */
+  }
+  
+  /* Style the scrollbar track */
+  .sidebar2::-webkit-scrollbar-track {
+  }
+  
